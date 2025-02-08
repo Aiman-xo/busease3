@@ -1,0 +1,326 @@
+/* body{
+    background-image: url("black earth.jpg");
+    object-fit:fill;
+    
+   
+    position: relative;
+    
+   
+   
+   
+   
+    
+    
+    
+}
+ */
+ body{
+  transition: animation smooth;
+  margin: 0;
+
+  
+  
+ }
+ .background{
+  height:100vh;
+  width: 100%;
+  position: absolute;
+ }
+
+
+
+.profile-pic {
+
+  width: 50px;
+  height: 50px;
+  margin-right: 14px;
+  border-radius: 100%;
+
+
+}
+
+.img-div {
+  position: absolute;
+  top: 0;
+
+
+  width: 200px;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn .65s ease-in-out forwards;
+ 
+
+
+
+
+}
+
+.name {
+  font-family: monospace;
+  display: inline;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(212, 225, 19);
+
+}
+
+.discription {
+  position: absolute;
+  top: 250px;
+  display: block;
+  font-size: 30px;
+  color: white;
+
+
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 50px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fadeInleft 1.05s ease-in-out forwards;
+  
+  
+
+
+
+}
+@keyframes fadeInleft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    
+  }
+  100%{
+    opacity: 1;
+    
+  }
+}
+
+.para {
+  font-size: 12px;
+  margin-bottom: -8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 615px;
+  left: 60px;
+}
+
+.start-now,
+.start-now *,
+.start-now :after,
+.start-now :before,
+.start-now:after,
+.start-now:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.start-now {
+  scale: .80;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn .65s ease-in-out forwards;
+
+}
+
+.start-now:disabled {
+  cursor: default;
+}
+
+.start-now:-moz-focusring {
+  outline: auto;
+}
+
+.start-now svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.start-now[hidden] {
+  display: none;
+}
+
+.start-now {
+  border: 0px solid;
+  opacity: 1;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+ 
+}
+
+.start-now .original {
+  background: #fff;
+  color: #000;
+ 
+
+
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.start-now:hover .original {
+  transform: translateY(100%);
+}
+
+.start-now:hover {
+  opacity: .80;
+  transition: .2s;
+}
+
+.start-now:active {
+  background-color: yellow;
+  color: black;
+}
+
+.start-now .letters {
+  display: inline-flex;
+}
+
+.space {
+  margin-left: 6px;
+}
+
+.start-now span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.3s;
+}
+
+.start-now span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.start-now:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.start-now:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.start-now:hover span:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+.start-now:hover span:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+.start-now:hover span:nth-child(5) {
+  transition-delay: 0.25s;
+}
+
+.start-now:hover span:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+.start-now:hover span:nth-child(7) {
+  transition-delay: 0.35s;
+}
+
+.start-now:hover span:nth-child(8) {
+  transition-delay: 0.4s;
+}
+
+.start-now:hover span:nth-child(9) {
+  transition-delay: 0.45s;
+}
+
+.start-now:hover span:nth-child(10) {
+  transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.start-now{
+   padding-left: 20px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   padding-right: 25px;
+   border: none;
+   border-radius:25px;
+   font-size: 18px;
+   font-weight: bold;
+   font-family: roboto,arial;
+   cursor: pointer;
+   transition:opacity .5s smooth,color .5s smooth;
+  
+
+}
+
+.start-now:hover{
+    opacity: .88;
+    transition: .5s ease;
+    
+   
+    transform: scaleX(1.06);
+    
+}
+.start-now:active{
+    color:purple;
+}
+.arrow{
+   
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 18px;
+}
+    */

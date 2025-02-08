@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9e8db;
+}
+.container {
+    display: flex;
+    gap: 70px;
+}
+.card {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+   
+
+}
+a,a:active,a:visited,a:visited,a:hover{
+    color: black;
+}
+.card:hover{
+    background-color: rgb(238, 235, 235);
+}
+.option-name{
+    position: absolute;
+    font-size: .8em;
+    font-weight: bold;
+    font-family: roboto,arial;
+    bottom: 2px;
+}
+.admin-img,.teacher-img,.student-img{
+    width: 110px;
+    margin-top: 40px;
+    
+}
+.teacher-img{
+    width: 100px;
+}
